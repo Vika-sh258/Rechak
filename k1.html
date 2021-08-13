@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="nofollow"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="k1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <!--
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            -->
+        </div>
+    </nav>
+    <div>
+        <div class="containerr">
+            <div class="column">
+                <div class="column-inner">
+                    <div class="first-row">
+                        <div class="combo-box1">
+                            <div class="text">
+                                <p class="text-h1"> let see</p>
+                                <p class="text-sh1">our reting is 100</p>
+                            </div>
+                            <div class="image">
+                                <img src="img/pexels-alex-andrews-821668.jpg" alt="rating" class="img-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-row">
+                        <div class="combo-box2">
+                            <div class="image">
+                                <img src="img/pexels-alex-andrews-821668.jpg" alt="rating" class="img-1">
+                            </div>
+                            <div class="text">
+                                <p class="text-h1"> let see</p>
+                                <p class="text-sh1">our reting is 100</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="third-row">
+                        <div class="combo-box1">
+                            <div class="text">
+                                <p class="text-h1"> let see</p>
+                                <p class="text-sh1">our reting is 100</p>
+                            </div>
+                            <div class="image">
+                                <img src="img/pexels-alex-andrews-821668.jpg" alt="rating" class="img-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fourth-row"  >
+                        <div class="combo-box1" style="display:grid"> 
+                        <div class="intro">
+                         <p>
+                             Put Your Text
+                         </p>
+                        </div>
+                        <div class="input-box1">
+                             <div class="input-area1">
+                                <textarea name="paragraph_text" cols="50" rows="10" style="min-width: 500px;
+                                margin-top: 0px;
+                                margin-bottom: 0px;
+                                min-height: 164px;"></textarea>
+                            </div>
+                            <div class="button-area1">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </div>
+                            <form action="{{ url_for('handle_data') }}" method="post">
+                                <input type="text" name="projectFilepath">
+                                <input type="submit">
+                            </form>
+                        </div>
+                        </div>
+
+                       
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
