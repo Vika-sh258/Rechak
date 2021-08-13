@@ -1,0 +1,15 @@
+.extr-row{
+    display: block;
+}
+.class_ques{
+    color: white;
+    font-size: x-large;
+    font-family: unset;
+    align-self: center;
+    padding: 5px;
+}
+.class_ans{
+    color: black;
+    font-size: 50px;
+    align-self: center;
+}
